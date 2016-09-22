@@ -86,7 +86,7 @@ public class QuizActivityFragment extends Fragment {
         guessRows = Integer.parseInt(choices) / 2;
 
         for (LinearLayout l : guessLinearLayouts)
-            layout.setVisibility(View.GONE);
+            l.setVisibility(View.GONE);
 
         for (int row = 0; row < guessRows; row++)
             guessLinearLayouts[row].setVisibility(View.VISIBLE);
